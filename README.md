@@ -28,3 +28,15 @@ from transformers import pipeline
 classifier = pipeline("sentiment-analysis")
 classifier("I've been waiting for a HuggingFace course my whole life.")
 ```
+
+# Ollama
+
+You can run local LLM with ollama, keep in mind that you need a lot of computing power.
+With a 1060 3G I can run a maximum of 1B parameters wich is only barely decent. You can run a model withf.
+```bash
+sudo ollama serve
+```
+and
+```
+ollama run tinyllama
+```
